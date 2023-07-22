@@ -1,4 +1,4 @@
-factory:
-	go build -o factory ./creational/factory && ./factory
+simple-factory:
+	go build -o simple-factory ./creational/simple-factory && ./simple-factory
 
-.PHONY: factory
+.PHONY: simple-factory

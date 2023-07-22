@@ -1,8 +1,8 @@
 package main
 
-type IGun interface {
+type Guner interface {
 	setName(name string)
 	setPower(power int)
-	getName() string
-	getPower() int
+	Name() string
+	Power() int
 }
