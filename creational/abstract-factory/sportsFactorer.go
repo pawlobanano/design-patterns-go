@@ -7,7 +7,7 @@ type SportsFactorer interface {
 	makeShirt() Shirter
 }
 
-func SportsFactory(brand string) (SportsFactorer, error) {
+func sportsFactory(brand string) (SportsFactorer, error) {
 	switch brand {
 	case "adadis":
 		return &Adadis{}, nil

@@ -3,18 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	adadisFactory, _ := SportsFactory("adadis")
-	nekiFactory, _ := SportsFactory("neki")
+	adadisFactory, _ := sportsFactory("adadis")
+	nekiFactory, _ := sportsFactory("neki")
+	dummyFactory, _ := sportsFactory("non-existent-brand")
 
 	adadisShoe := adadisFactory.makeShoe()
 	adadisShirt := adadisFactory.makeShirt()
 	nekiShoe := nekiFactory.makeShoe()
 	nekiShirt := nekiFactory.makeShirt()
+	dummyShoe := dummyFactory.makeShoe()
+	dummyShirt := dummyFactory.makeShirt()
 
 	printShoeDetails(adadisShoe)
 	printShirtDetails(adadisShirt)
 	printShoeDetails(nekiShoe)
 	printShirtDetails(nekiShirt)
+	printShoeDetails(dummyShoe)
+	printShirtDetails(dummyShirt)
 }
 
 func printShoeDetails(s Shoer) {
