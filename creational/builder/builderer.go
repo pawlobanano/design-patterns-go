@@ -12,7 +12,7 @@ func getHouseBuilder(builderType string) Builderer {
 	case "normal":
 		return newNormalHouseBuilder()
 	case "igloo":
-		return nil
+		return newIglooHouseBuilder()
 	default:
 		return &Dummy{}
 	}
