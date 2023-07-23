@@ -1,5 +1,7 @@
 abstract-factory
+builder
 simple-factory
 
 !abstract-factory/
+!builder/
 !simple-factory/
