@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func getGun(gunType string) (Guner, error) {
+func getGun(gunType string) (Gunner, error) {
 	switch gunType {
 	case "ak47":
 		return newAk47(), nil

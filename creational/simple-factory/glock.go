@@ -4,7 +4,7 @@ type glock struct {
 	Gun
 }
 
-func newGlock() Guner {
+func newGlock() Gunner {
 	return &glock{
 		Gun: Gun{
 			name:  "Glock pistol",

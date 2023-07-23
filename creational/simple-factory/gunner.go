@@ -1,6 +1,6 @@
 package main
 
-type Guner interface {
+type Gunner interface {
 	setName(name string)
 	setPower(power int)
 	Name() string
