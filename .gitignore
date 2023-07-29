@@ -1,7 +1,9 @@
 abstract-factory
 builder
+prototype
 simple-factory
 
 !abstract-factory/
 !builder/
+!prototype/
 !simple-factory/
